@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentEase | Furniture & Appliance Rentals</title>
+    <meta
+      name="description"
+      content="RentEase helps students and professionals rent furniture and appliances affordably with flexible monthly plans."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="topbar">
+      <a class="brand" href="index.html">RentEase</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="admin.html">Admin</a>
+        <a href="cart.html">Cart <span id="cart-count" class="pill">0</span></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Affordable monthly rentals</p>
+          <h1>Furnish your space without the heavy upfront cost.</h1>
+          <p>
+            RentEase offers flexible monthly plans for furniture, appliances, and
+            relocation-friendly essentials for students and professionals.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="catalog.html">Explore Catalog</a>
+            <a class="btn btn-secondary" href="admin.html">Admin Dashboard</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Flexible tenures from 1 to 12 months</li>
+            <li>Delivery and pickup scheduling</li>
+            <li>Maintenance support included</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <h2>Why RentEase?</h2>
+          <div class="metric-list">
+            <div>
+              <strong>24/7</strong>
+              <span>Support</span>
+            </div>
+            <div>
+              <strong>100+</strong>
+              <span>Products</span>
+            </div>
+            <div>
+              <strong>4.8/5</strong>
+              <span>Rated service</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Platform goals</p>
+          <h2>Built for urban living and easy relocation</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <h3>Affordable plans</h3>
+            <p>Choose budget-friendly rental options for essentials without long-term ownership.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Easy relocation</h3>
+            <p>Move cities without worrying about transporting bulky furniture or appliances.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Fast support</h3>
+            <p>Raise maintenance requests and receive quick assistance throughout your rental period.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Popular rentals</p>
+          <h2>Featured furniture and appliances</h2>
+        </div>
+        <div id="featured-products" class="product-grid"></div>
+      </section>
+
+      <section class="section flow-section">
+        <div class="section-heading">
+          <p class="eyebrow">User journey</p>
+          <h2>Simple from browse to return</h2>
+        </div>
+        <div class="flow-grid">
+          <article class="card">
+            <h3>1. Select</h3>
+            <p>Pick your furniture or appliance and choose the best rental tenure.</p>
+          </article>
+          <article class="card">
+            <h3>2. Schedule</h3>
+            <p>Choose a delivery date, location, and a pickup slot that matches your plan.</p>
+          </article>
+          <article class="card">
+            <h3>3. Enjoy & return</h3>
+            <p>Use the items during your rental period and extend or return them effortlessly.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>RentEase © 2026 • Designed for modern renters and growing cities.</p>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentEase | Cart</title>
+    <meta name="description" content="Review your selections and confirm your rental booking." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">RentEase</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="admin.html">Admin</a>
+        <a href="cart.html" class="active">Cart <span id="cart-count" class="pill">0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-shell cart-layout" id="main-content">
+      <section>
+        <div class="page-intro">
+          <p class="eyebrow">Checkout</p>
+          <h1>Your rental shortlist</h1>
+          <p>Review your selected items, remove anything you do not need, and confirm delivery details.</p>
+        </div>
+        <div id="cart-items" class="stack-list"></div>
+      </section>
+
+      <aside class="card order-card">
+        <h2>Booking summary</h2>
+        <div class="summary-row"><span>Items</span><strong id="summary-items">0</strong></div>
+        <div class="summary-row"><span>Estimated monthly rent</span><strong id="summary-rent">₹0</strong></div>
+        <div class="summary-row"><span>Security deposit</span><strong id="summary-deposit">₹0</strong></div>
+        <form id="checkout-form" novalidate>
+          <label>
+            <span>Delivery city</span>
+            <input type="text" name="city" placeholder="Mumbai" required />
+          </label>
+          <label>
+            <span>Preferred date</span>
+            <input type="date" name="date" required />
+          </label>
+          <button class="btn btn-primary full-width" type="submit">Confirm booking</button>
+        </form>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>RentEase © 2026 • Designed for modern renters and growing cities.</p>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

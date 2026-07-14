@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentEase | Catalog</title>
+    <meta name="description" content="Browse available furniture and appliance rentals from RentEase." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">RentEase</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="catalog.html" class="active">Catalog</a>
+        <a href="admin.html">Admin</a>
+        <a href="cart.html">Cart <span id="cart-count" class="pill">0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-shell" id="main-content">
+      <section class="page-intro">
+        <p class="eyebrow">Browse rentals</p>
+        <h1>Choose the items that fit your space and budget.</h1>
+        <p>Filter by category to explore beds, sofas, refrigerators, televisions, and more.</p>
+      </section>
+
+      <section class="controls" aria-label="Catalog filters">
+        <label class="filter-pill" for="category-filter">
+          <span>Category</span>
+          <select id="category-filter">
+            <option value="all">All categories</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Appliances">Appliances</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="catalog-grid" class="product-grid"></section>
+    </main>
+
+    <footer class="footer">
+      <p>RentEase © 2026 • Designed for modern renters and growing cities.</p>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentEase | Admin</title>
+    <meta name="description" content="Manage inventory, maintenance, and rental health from the admin dashboard." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">RentEase</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="admin.html" class="active">Admin</a>
+        <a href="cart.html">Cart <span id="cart-count" class="pill">0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-shell" id="main-content">
+      <section class="page-intro">
+        <p class="eyebrow">Admin dashboard</p>
+        <h1>Monitor rentals, inventory and service requests.</h1>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat-card">
+          <h3 id="stat-rentals">0</h3>
+          <p>Active rentals</p>
+        </article>
+        <article class="card stat-card">
+          <h3 id="stat-mrr">₹0</h3>
+          <p>Monthly recurring revenue</p>
+        </article>
+        <article class="card stat-card">
+          <h3 id="stat-availability">0%</h3>
+          <p>Inventory availability</p>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="card">
+          <h2>Inventory overview</h2>
+          <div id="inventory-list" class="stack-list"></div>
+        </article>
+        <article class="card">
+          <h2>Maintenance requests</h2>
+          <div id="maintenance-list" class="stack-list"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>RentEase © 2026 • Designed for modern renters and growing cities.</p>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
